@@ -40,7 +40,7 @@ class Rocket(Body):
     def advance(self):
         super().advance()
         if self.m >= 40:          #Масса корпуса ракеты
-            self.m -= MODEL_DM
+            self.m -= MODEL_D
             v = (self.vx ** 2 + self.vy ** 2) ** 0.5
             
             dv = MODEL_U * MODEL_DM / self.m     #Формулу мы вывели через ЗСЭ   
